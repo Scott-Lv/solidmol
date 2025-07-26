@@ -1,0 +1,227 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Primitive Cell of FCC structure for Solid State Physics</title>
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+</head>
+<div id="container-01" class="mol-container"></div>
+<style>
+.mol-container {
+  width: 1000px;
+  height: 860px;
+  position: relative;
+}
+</style>
+<script>
+  let element = document.querySelector('#container-01');
+  let config = { backgroundColor: '0xeeeeee' };
+  let viewer = $3Dmol.createViewer( element, config );
+//cubic atom  1-16
+//1
+  viewer.addSphere({ center: {x: 4.0100, y: 0.0000, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//2
+  viewer.addSphere({ center: {x: 4.0100, y: 4.0100, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//3
+  viewer.addSphere({ center: {x: 0.0000, y: 4.0100, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//4
+  viewer.addSphere({ center: {x: 0.0000, y: 0.0000, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//5
+  viewer.addSphere({ center: {x: 4.0100, y: 0.0000, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//6
+  viewer.addSphere({ center: {x: 4.0100, y: 4.0100, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//7
+  viewer.addSphere({ center: {x: 0.0000, y: 4.0100, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//8
+  viewer.addSphere({ center: {x: 0.0000, y: 0.0000, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//9
+  viewer.addSphere({ center: {x: 2.0050, y: 2.0050, z: 4.0100}, radius: 0.2, color: '0x8dc63f' });
+//10
+  viewer.addSphere({ center: {x: 2.0050, y: 2.0050, z: 0.0000}, radius: 0.2, color: '0x8dc63f' });
+//11
+  viewer.addSphere({ center: {x: 4.0100, y: 2.0050, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//12
+  viewer.addSphere({ center: {x: 0.0000, y: 2.0050, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//13
+  viewer.addSphere({ center: {x: 2.0050, y: 4.0100, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//14
+  viewer.addSphere({ center: {x: 2.0050, y: 0.0000, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//15
+  viewer.addSphere({ center: {x: 2.0050, y: 2.0050, z: 2.0050}, radius: 0.2, color: '0xa864a8' });
+
+  
+  viewer.zoomTo();
+  viewer.render();
+//  viewer.zoom(0.8, 1000);
+
+//cubic cylinder
+//atom1-2,1-4,1-5
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 4.0100},
+                              end:{x: 4.0100, y: 4.0100, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 4.0100},
+                              end:{x: 0.0000, y: 0.0000, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 4.0100},
+                              end:{x: 4.0100, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//atom2-3,2-6
+          viewer.addCylinder({start:{x: 4.0100, y: 4.0100, z: 4.0100},
+                              end:{x: 0.0000, y: 4.0100, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 4.0100, y: 4.0100, z: 4.0100},
+                              end:{x: 4.0100, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});			
+//atom3-4,3-7
+          viewer.addCylinder({start:{x: 0.0000, y: 4.0100, z: 4.0100},
+                              end:{x: 0.0000, y: 0.0000, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 0.0000, y: 4.0100, z: 4.0100},
+                              end:{x: 0.0000, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+//atom4-8
+          viewer.addCylinder({start:{x: 0.0000, y: 0.0000, z: 4.0100},
+                              end:{x: 0.0000, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+							  
+//atom5-6, 5-8
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 0.0000},
+                              end:{x: 4.0100, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 0.0000},
+                              end:{x: 0.0000, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//atom6-7
+          viewer.addCylinder({start:{x: 4.0100, y: 4.0100, z: 0.0000},
+                              end:{x: 0.0000, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//atom7-8
+          viewer.addCylinder({start:{x: 0.0000, y: 4.0100, z: 0.0000},
+                              end:{x: 0.0000, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+
+//atom9-11,9-12,9-13,9-14
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+							  
+//atom10-11,10-12,10-13,10-14
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});			
+//atom11-13,11-14
+          viewer.addCylinder({start:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+							  
+//atom12-13, 12-14
+          viewer.addCylinder({start:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+
+viewer.addLabel("Perovstic Structure", {position: {x:0, y:0, z:0}, backgroundColor: 0x800080, backgroundOpacity: 0.8});							  
+
+							  
+viewer.render();
+
+  
+</script>
+    <label>
+      Created by Scott Lv, updated 2025, 07, 26, NCEPU(BD)
+    </label>
+</html>
