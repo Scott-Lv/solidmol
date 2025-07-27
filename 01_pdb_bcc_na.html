@@ -1,0 +1,247 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BCC structure for Solid State Physics</title>
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+</head>
+<div id="container-01" class="mol-container"></div>
+<style>
+.mol-container {
+  width: 1000px;
+  height: 860px;
+  position: relative;
+}
+</style>
+<script>
+  let element = document.querySelector('#container-01');
+  let config = { backgroundColor: '0xeeeeee' };
+  let viewer = $3Dmol.createViewer( element, config );
+  viewer.addSphere({ center: {x:-3.698, y:-3.092, z:-3.508}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-1.644, y:-1.038, z:-1.454}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-3.698, y:-3.092, z: 0.601}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-1.644, y:-1.038, z: 2.657}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-3.698, y: 1.018, z:-3.508}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-1.644, y: 3.072, z:-1.454}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-3.698, y: 1.018, z: 0.601}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x:-1.644, y: 3.072, z: 2.657}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 0.412, y:-3.092, z:-3.508}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 2.466, y:-1.038, z:-1.454}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 0.412, y:-3.092, z: 0.601}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 2.466, y:-1.038, z: 2.657}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 0.412, y: 1.018, z:-3.508}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 2.466, y: 3.072, z:-1.454}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 0.412, y: 1.018, z: 0.601}, radius: 0.3, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 2.466, y: 3.072, z: 2.657}, radius: 0.3, color: '0x7ecef4' });
+  viewer.zoomTo();
+  viewer.render();
+//  viewer.zoom(0.8, 1000);
+
+//bcc_a
+//atom1a-4a,1a-2a,1a-5a
+          viewer.addCylinder({start:{x:-3.698, y: 1.018, z:-3.508},
+                              end:{x: 0.412, y: 1.018, z:-3.508},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x:-3.698, y: 1.018, z:-3.508},
+                              end:{x:-3.698, y: 1.018, z: 0.601},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x:-3.698, y: 1.018, z:-3.508},
+                              end:{x:-3.698, y:-3.092, z:-3.508},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+//atom2a-6a,2a-3a
+          viewer.addCylinder({start:{x:-3.698, y: 1.018, z:0.601},
+                              end:{x:-3.698, y: -3.092, z: 0.601},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x:-3.698, y: 1.018, z:0.601},
+                              end:{x: 0.412, y: 1.018, z:0.601},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});			
+//atom3a-4a,3a-7a
+          viewer.addCylinder({start:{x: 0.412, y: 1.018, z:0.601},
+                              end:{x: 0.412, y: 1.018, z:-3.508},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 0.412, y: 1.018, z:0.601},
+                              end:{x: 0.412, y: -3.092, z:0.601},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+//atom4a-8a
+          viewer.addCylinder({start:{x: 0.412, y: 1.018, z:-3.508},
+                              end:{x: 0.412, y: -3.092, z:-3.508},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+//atom5a-6a,5a-8a
+          viewer.addCylinder({start:{x:-3.698, y: -3.092, z:-3.508},
+                              end:{x:-3.698, y: -3.092, z:0.601},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x:-3.698, y: -3.092, z:-3.508},
+                              end:{x: 0.412, y: -3.092, z:-3.508},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+//atom6a-7a
+          viewer.addCylinder({start:{x:-3.698, y: -3.092, z:0.601},
+                              end:{x: 0.412, y: -3.092, z:0.601},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+//atom6a-7a
+          viewer.addCylinder({start:{x: 0.412, y: -3.092, z:0.601},
+                              end:{x: 0.412, y: -3.092, z:-3.508},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+
+//bcc_b
+//atom1b-4b,1b-2b,1b-5b
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:-1.454},
+                              end:{x: 2.466, y: 3.072, z:-1.454},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:-1.454},
+                              end:{x:-1.644, y: 3.072, z:2.657},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:-1.454},
+                              end:{x:-1.644, y: -1.038, z:-1.454},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});
+							  
+//atom2b-6b,2b-3b
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:2.657},
+                              end:{x:-1.644, y:-1.038, z:2.657},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:2.657},
+                              end:{x: 2.466, y: 3.072, z:2.657},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+//atom3b-4b,3b-7b
+          viewer.addCylinder({start:{x: 2.466, y: 3.072, z:2.657},
+                              end:{x: 2.466, y: 3.072, z:-1.454},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+          viewer.addCylinder({start:{x: 2.466, y: 3.072, z:2.657},
+                              end:{x: 2.466, y:-1.038, z:2.657},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});			
+//atom4b-8b
+          viewer.addCylinder({start:{x: 2.466, y: 3.072, z:-1.454},
+                              end:{x: 2.466, y:-1.038, z:-1.454},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+
+//atom5b-6b,5b-8b
+          viewer.addCylinder({start:{x:-1.644, y: -1.038, z:-1.454},
+                              end:{x:-1.644, y:-1.038, z:2.657},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+          viewer.addCylinder({start:{x:-1.644, y: -1.038, z:-1.454},
+                              end:{x: 2.466, y: -1.038, z:-1.454},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});		
+
+//atom7b-8b
+          viewer.addCylinder({start:{x: 2.466, y:-1.038, z:2.657},
+                              end:{x: 2.466, y:-1.038, z:-1.454},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+
+//atom7b-6b
+          viewer.addCylinder({start:{x: 2.466, y:-1.038, z:2.657},
+                              end:{x:-1.644, y:-1.038, z:2.657},
+                              radius:0.1,
+                              color:'lightgray',
+                              fromCap:false,
+                              toCap:false});	
+
+//line
+//1b-7b
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:-1.454},
+                              end:{x: 2.466, y:-1.038, z:2.657},
+                              radius:0.02,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//2b-8b
+          viewer.addCylinder({start:{x:-1.644, y: 3.072, z:2.657},
+                              end:{x: 2.466, y:-1.038, z:-1.454},
+                              radius:0.02,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+//3b-5b
+          viewer.addCylinder({start:{x: 2.466, y: 3.072, z:2.657},
+                              end:{x:-1.644, y: -1.038, z:-1.454},
+                              radius:0.02,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+//4b-6b
+          viewer.addCylinder({start:{x: 2.466, y: 3.072, z:-1.454},
+                              end:{x:-1.644, y:-1.038, z:2.657},
+                              radius:0.02,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+viewer.addLabel("Body centered Cubic", {position: {x:-5.092, y:-5.092, z:-5.092}, backgroundColor: 0x800080, backgroundOpacity: 0.8});							  
+viewer.render();
+  viewer.zoom(0.8, 1000);
+//viewer.addLine({color:'red',start:{x:-1.644, y: 3.072, z:-1.454},end:{x:6.8650,y:0.3835,z: -1.0468}});
+//        viewer.setStyle({}, {stick: {radius: 1}});
+							  
+//viewer.render();
+  
+</script>
+
+    <label>
+            Created by Scott Lv, updated 2025, 07, 27, NCEPU(BD)
+    </label>
+</html>

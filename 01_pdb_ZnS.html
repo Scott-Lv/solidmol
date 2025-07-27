@@ -1,7 +1,7 @@
 <html>
 <head>
 <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
-    <title>Diamond structure for Solid State Physics</title>
+    <title>Primitive cell of Diamond structure for Solid State Physics</title>
 </head>
 <div id="container-01" class="mol-container"></div>
 <style>
@@ -33,21 +33,21 @@
 //08
   viewer.addSphere({ center: {x: 4.4750, y: 2.6740, z: 2.6740}, radius: 0.2, color: '0x7ecef4' });
 //09
-  viewer.addSphere({ center: {x: 1.7830, y: 7.1320, z: 1.7830}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 1.7830, y: 7.1320, z: 1.7830}, radius: 0.2, color: '0x80c269' });
 //10
-  viewer.addSphere({ center: {x: 1.7830, y: 7.1320, z: 5.3490}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 1.7830, y: 7.1320, z: 5.3490}, radius: 0.2, color: '0x80c269' });
 //11
-  viewer.addSphere({ center: {x: 5.3490, y: 7.1320, z: 5.3490}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 5.3490, y: 7.1320, z: 5.3490}, radius: 0.2, color: '0x80c269' });
 //12
-  viewer.addSphere({ center: {x: 5.3490, y: 7.1320, z: 1.7830}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 5.3490, y: 7.1320, z: 1.7830}, radius: 0.2, color: '0x80c269' });
 //13
-  viewer.addSphere({ center: {x: 1.7830, y: 3.5660, z: 1.7830}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 1.7830, y: 3.5660, z: 1.7830}, radius: 0.2, color: '0x80c269' });
 //14
-  viewer.addSphere({ center: {x: 1.7830, y: 3.5660, z: 5.3490}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 1.7830, y: 3.5660, z: 5.3490}, radius: 0.2, color: '0x80c269' });
 //15
-  viewer.addSphere({ center: {x: 5.3490, y: 3.5660, z: 5.3490}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 5.3490, y: 3.5660, z: 5.3490}, radius: 0.2, color: '0x80c269' });
 //16
-  viewer.addSphere({ center: {x: 5.3490, y: 3.5660, z: 1.7830}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 5.3490, y: 3.5660, z: 1.7830}, radius: 0.2, color: '0x80c269' });
 //17 
   viewer.addSphere({ center: {x: 2.6740, y: 6.2400, z: 4.4750}, radius: 0.2, color: '0x7ecef4' });
 //18
@@ -61,17 +61,17 @@
 //22
   viewer.addSphere({ center: {x: 2.6740, y: 4.4570, z: 2.6740}, radius: 0.2, color: '0x7ecef4' });
 //23
-  viewer.addSphere({ center: {x: 3.5660, y: 7.1320, z: 3.5660}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 3.5660, y: 7.1320, z: 3.5660}, radius: 0.2, color: '0x80c269' });
 //24
-  viewer.addSphere({ center: {x: 3.5660, y: 3.5660, z: 3.5660}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 3.5660, y: 3.5660, z: 3.5660}, radius: 0.2, color: '0x80c269' });
 //25
-  viewer.addSphere({ center: {x: 1.7830, y: 5.3490, z: 3.5660}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 1.7830, y: 5.3490, z: 3.5660}, radius: 0.2, color: '0x80c269' });
 //26
-  viewer.addSphere({ center: {x: 5.3490, y: 5.3490, z: 3.5660}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 5.3490, y: 5.3490, z: 3.5660}, radius: 0.2, color: '0x80c269' });
 //27 
-  viewer.addSphere({ center: {x: 3.5660, y: 5.3490, z: 5.3490}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 3.5660, y: 5.3490, z: 5.3490}, radius: 0.2, color: '0x80c269' });
 //28
-  viewer.addSphere({ center: {x: 3.5660, y: 5.3490, z: 1.7830}, radius: 0.2, color: '0x7ecef4' });
+  viewer.addSphere({ center: {x: 3.5660, y: 5.3490, z: 1.7830}, radius: 0.2, color: '0x80c269' });
   
 //bond
 //cube1,atom1-2,1-4,1-5
@@ -445,14 +445,95 @@
                               fromCap:false,
                               toCap:false});	
 							  
-viewer.addLabel("Silicon/Diamond structure", {position: {x:0, y:0, z:0}, backgroundColor: 0x800080, backgroundOpacity: 0.8});	
-							  
+
+//primitive cell line
+//atom6-18,6-19,6-21
+          viewer.addCylinder({start:{x: 0.8920, y: 2.6740, z: 6.2400},
+                              end:{x: 2.6740, y: 2.6740, z: 4.4750},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 0.8920, y: 2.6740, z: 6.2400},
+                              end:{x: 0.8920, y: 4.4570, z: 4.4570},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 0.8920, y: 2.6740, z: 6.2400},
+                              end:{x: 2.6740, y: 4.4570, z: 6.2400},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});							  
+//atom4-17,4-20,4-22
+          viewer.addCylinder({start:{x: 4.4750, y: 6.2400, z: 2.6740},
+                              end:{x: 2.6740, y: 6.2400, z: 4.4750},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 4.4750, y: 6.2400, z: 2.6740},
+                              end:{x: 4.4570, y: 4.4570, z: 4.4570},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});								  
+          viewer.addCylinder({start:{x: 4.4750, y: 6.2400, z: 2.6740},
+                              end:{x: 2.6740, y: 4.4570, z: 2.6740},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});
+
+//atom17-19,17-21
+          viewer.addCylinder({start:{x: 2.6740, y: 6.2400, z: 4.4750},
+                              end:{x: 0.8920, y: 4.4570, z: 4.4570},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});								  
+          viewer.addCylinder({start:{x: 2.6740, y: 6.2400, z: 4.4750},
+                              end:{x: 2.6740, y: 4.4570, z: 6.2400},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});	
+//atom18-20,18-22
+          viewer.addCylinder({start:{x: 2.6740, y: 2.6740, z: 4.4750},
+                              end:{x: 4.4570, y: 4.4570, z: 4.4570},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 2.6740, y: 2.6740, z: 4.4750},
+                              end:{x: 2.6740, y: 4.4570, z: 2.6740},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});								  
+//atom19-22
+          viewer.addCylinder({start:{x: 0.8920, y: 4.4570, z: 4.4570},
+                              end:{x: 2.6740, y: 4.4570, z: 2.6740},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});	
+//atom20-21
+          viewer.addCylinder({start:{x: 4.4570, y: 4.4570, z: 4.4570},
+                              end:{x: 2.6740, y: 4.4570, z: 6.2400},
+                              radius:0.02,
+                              color:'pink',
+                              fromCap:false,
+                              toCap:false});	
+
+viewer.addLabel("Primitive Cell of ZnS", {position: {x:0, y:0, z:0}, backgroundColor: 0x800080, backgroundOpacity: 0.8});	
+			  
   viewer.zoomTo();
   viewer.render();
   viewer.zoom(0.8, 1000);
-
 </script>
       <label>
-      Created by Scott Lv, 2025,07,27, NCEPU(BD)
+      Created by Scott Lv, updated 2025,07,27, NCEPU(BD)
     </label>
 </html>
