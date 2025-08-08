@@ -1,0 +1,318 @@
+<html>
+
+<head>
+<style>
+.mol-container {
+  width: 1000px;
+  height: 860px;
+  position: relative;
+}
+</style>
+<style>
+.mol-container {
+  width: 500px;
+  height: 640px;
+  position: relative;
+}
+</style>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta charset="UTF-8">
+<title>BCC Crystal Structure in Solid State Physics with 3Dmol.js</title>
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+</head>
+
+<body>
+
+<div align="center">
+
+<table border="0" width="84%" height="866">
+	<tr>
+		<td width="6%" height="84"></td>
+		<td height="84" colspan="2">
+		<p align="center">
+		  <b>
+		  <font color="#6699FF" size="6" face="Arial Unicode MS">Common&nbsp; Crystal&nbsp; Structures&nbsp; 
+			in&nbsp; Solid&nbsp; State&nbsp; Physics</font></b><hr color="#6699FF"></td>
+		<td width="10%" height="84"></td>
+	</tr>
+	<tr>
+		<td width="6%" height="35"></td>
+		<td height="35" colspan="2"><font face="Arial Unicode MS" size="5" color="#00FF00">&#10070; </font>
+		<font face="Arial Unicode MS" size="5" color="#808080">BaTiO3 -- 
+		Perovskite Cubic structure</font></td>
+		<td width="10%" height="35"></td>
+	</tr>
+	<tr>
+		<td width="6%"></td>
+		<td width="57%"><font size="5" face="Arial Unicode MS"> </font>
+		<blockquote>
+<div id="container-01" class="mol-container" style="width: 812px; height: 649px"></div>
+<style>
+.mol-container {
+  width: 1000px;
+  height: 860px;
+  position: relative;
+}
+</style>
+<script>
+  let element = document.querySelector('#container-01');
+  let config = { backgroundColor: '0xeeeeee' };
+  let viewer = $3Dmol.createViewer( element, config );
+//cubic atom  1-16
+//1
+  viewer.addSphere({ center: {x: 4.0100, y: 0.0000, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//2
+  viewer.addSphere({ center: {x: 4.0100, y: 4.0100, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//3
+  viewer.addSphere({ center: {x: 0.0000, y: 4.0100, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//4
+  viewer.addSphere({ center: {x: 0.0000, y: 0.0000, z: 4.0100}, radius: 0.2, color: '0x7ecef4' });
+//5
+  viewer.addSphere({ center: {x: 4.0100, y: 0.0000, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//6
+  viewer.addSphere({ center: {x: 4.0100, y: 4.0100, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//7
+  viewer.addSphere({ center: {x: 0.0000, y: 4.0100, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//8
+  viewer.addSphere({ center: {x: 0.0000, y: 0.0000, z: 0.0000}, radius: 0.2, color: '0x7ecef4' });
+//9
+  viewer.addSphere({ center: {x: 2.0050, y: 2.0050, z: 4.0100}, radius: 0.2, color: '0x8dc63f' });
+//10
+  viewer.addSphere({ center: {x: 2.0050, y: 2.0050, z: 0.0000}, radius: 0.2, color: '0x8dc63f' });
+//11
+  viewer.addSphere({ center: {x: 4.0100, y: 2.0050, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//12
+  viewer.addSphere({ center: {x: 0.0000, y: 2.0050, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//13
+  viewer.addSphere({ center: {x: 2.0050, y: 4.0100, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//14
+  viewer.addSphere({ center: {x: 2.0050, y: 0.0000, z: 2.0050}, radius: 0.2, color: '0x8dc63f' });
+//15
+  viewer.addSphere({ center: {x: 2.0050, y: 2.0050, z: 2.0050}, radius: 0.2, color: '0xa864a8' });
+
+  
+  viewer.zoomTo();
+  viewer.render();
+//  viewer.zoom(0.8, 1000);
+
+//cubic cylinder
+//atom1-2,1-4,1-5
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 4.0100},
+                              end:{x: 4.0100, y: 4.0100, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 4.0100},
+                              end:{x: 0.0000, y: 0.0000, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 4.0100},
+                              end:{x: 4.0100, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//atom2-3,2-6
+          viewer.addCylinder({start:{x: 4.0100, y: 4.0100, z: 4.0100},
+                              end:{x: 0.0000, y: 4.0100, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 4.0100, y: 4.0100, z: 4.0100},
+                              end:{x: 4.0100, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});			
+//atom3-4,3-7
+          viewer.addCylinder({start:{x: 0.0000, y: 4.0100, z: 4.0100},
+                              end:{x: 0.0000, y: 0.0000, z: 4.0100},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 0.0000, y: 4.0100, z: 4.0100},
+                              end:{x: 0.0000, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+//atom4-8
+          viewer.addCylinder({start:{x: 0.0000, y: 0.0000, z: 4.0100},
+                              end:{x: 0.0000, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+							  
+//atom5-6, 5-8
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 0.0000},
+                              end:{x: 4.0100, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 4.0100, y: 0.0000, z: 0.0000},
+                              end:{x: 0.0000, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//atom6-7
+          viewer.addCylinder({start:{x: 4.0100, y: 4.0100, z: 0.0000},
+                              end:{x: 0.0000, y: 4.0100, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+//atom7-8
+          viewer.addCylinder({start:{x: 0.0000, y: 4.0100, z: 0.0000},
+                              end:{x: 0.0000, y: 0.0000, z: 0.0000},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+
+//atom9-11,9-12,9-13,9-14
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 4.0100},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+							  
+//atom10-11,10-12,10-13,10-14
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 2.0050, y: 2.0050, z: 0.0000},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});			
+//atom11-13,11-14
+          viewer.addCylinder({start:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});							  
+          viewer.addCylinder({start:{x: 4.0100, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});		
+							  
+//atom12-13, 12-14
+          viewer.addCylinder({start:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 4.0100, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+          viewer.addCylinder({start:{x: 0.0000, y: 2.0050, z: 2.0050},
+                              end:{x: 2.0050, y: 0.0000, z: 2.0050},
+                              radius:0.05,
+                              color:'white',
+                              fromCap:false,
+                              toCap:false});	
+
+viewer.addLabel("Perovstic Cubic Structure", {position: {x:-2, y:-1, z:-1}, backgroundColor: 0x800080, backgroundOpacity: 0.8});							  
+
+							  
+viewer.render();
+
+  
+</script>		
+		</blockquote>
+		</td>
+		
+
+<!--3d mol windows.-->
+<td width="27%">
+<blockquote>
+<p align="center">
+<script>
+  let element = document.querySelector('#container-03');
+  let config = { backgroundColor: '0xeeeeee' };
+  let viewer = $3Dmol.createViewer( element, config );
+//cubic atom  1-16
+//1
+  viewer.addSphere({ center: {x:-3.6978, y:-3.0917, z: 0.6011}, radius: 0.2, color: '0x7ecef4' });
+//2
+  viewer.addSphere({ center: {x: 0.4122, y:-3.0917, z: 0.6011}, radius: 0.2, color: '0x7ecef4' });
+  viewer.zoomTo();
+  viewer.render();
+</script>
+<img border="0" src="pbtio3_00.png" width="375" height="649" align="left"></p>
+</blockquote></td>
+	<td width="10%"> </td>
+</tr>
+	<tr>
+		<td width="6%" height="45"> </td>
+		<td height="45" colspan="2">
+		  <blockquote>
+			<blockquote>
+				<hr>
+				<p align="left" title="WeChat: Scott_Lv ">
+				<font face="Arial Unicode MS" color="#999999">
+				<a href="mailto:glv7@ncepu.edu.cn">Scott Lv</a><font color="#999999"> 
+			: ) ,</font> updated 2025, 08, 07</font> <font face="Arial Unicode MS" color="#999999"> NCEPU (BD)<font face="Arial, Helvetica, sans-serif">,</font></font>
+				<p><font face="Arial Unicode MS">
+				<a target="_blank" style="text-decoration: none;" href="https://www.hep.com.cn">HEP.cn</a> ,&nbsp;
+				<a target="_blank" style="text-decoration: none;" href="http://www.moe.gov.cn/">MOE.gov.cn</a>,&nbsp;
+				<a target="_blank" style="text-decoration: none;" href="http://3dmol.csb.pitt.edu/">3Dmol.js</a>,
+				<a target="_blank" style="text-decoration: none;" href="https://webelements.com/">Webelements</a>
+				</font></p>
+			</blockquote>
+		  </blockquote>
+		</td>
+		<td width="10%" height="45"></td>
+	</tr>
+</table>
+
+</div>
+
+</body>
+
+</html>
