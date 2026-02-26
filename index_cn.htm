@@ -305,6 +305,25 @@ viewer.render();
 				<font color="#6666FF">晶体之星</font></a></font></p>
 			</blockquote>
 		  </blockquote>
+    <p> 您是第/You are the <span id="visitorCount">0</span> 位访客/visitor, think you/谢谢！ </p>
+
+    <script>
+        // 从 localStorage 中获取访问次数，如果不存在则初始化为 0
+        let visitCount = localStorage.getItem('visitCount');
+        if (visitCount === null) {
+            visitCount = 1;
+        } else {
+            visitCount = parseInt(visitCount) + 1;
+        }
+        
+        // 将更新后的次数存回 localStorage
+        localStorage.setItem('visitCount', visitCount);
+        
+        // 在页面上显示访问次数
+        document.getElementById('visitorCount').textContent = visitCount;
+    </script>
+
+
 		</td>
 		<td width="11%" height="45">&nbsp;</td>
 	</tr>
@@ -315,6 +334,7 @@ viewer.render();
 </body>
 
 </html>
+
 
 
 
