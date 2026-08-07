@@ -12,6 +12,82 @@
                   height: 800px; 
                   position: relative;  }
  </style>
+<table border="1" width="42%">
+	<tr>
+		<td width="50">&nbsp;</td>
+		<td>bend arrow&nbsp; --&nbsp; html code</td>
+		<td width="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="50">&nbsp;</td>
+		<td>&lt;html&gt;<br>
+		&lt;head&gt;<br>
+		&lt;meta charset=&quot;utf-8&quot;&gt;<br>
+		&lt;title&gt;My Homepage&lt;/title&gt;<br>
+		&lt;script src=&quot;https://3Dmol.org/build/3Dmol-min.js&quot;&gt;&lt;/script&gt;<br>
+		&lt;/head&gt;<br>
+		&lt;body&gt;<br>
+		&lt;div id=&quot;container-01&quot; class=&quot;mol-container&quot;&gt;&lt;/div&gt; <br>
+		&lt;style&gt; <br>
+		.mol-container { <br>
+		width: 800px; <br>
+		height: 800px; <br>
+		position: relative; }<br>
+		&lt;/style&gt;<br>
+		&lt;script&gt;<br>
+		// two spheree<br>
+		let element = document.querySelector('#container-01');<br>
+		let config = { backgroundColor: '0xeeffee' };<br>
+		let viewer = $3Dmol.createViewer( element, config );<br>
+		//viewer.addSphere({ center: {x:0.0, y: 1.0, z:0.0}, radius: 0.3, color: 
+		'0x7ecef4' });<br>
+		//viewer.addSphere({ center: {x:0.0, y:-1.0, z:0.0}, radius: 0.3, color: 
+		'0x7ecef4' });<br>
+		//viewer.render();<br>
+		<br>
+		//bond<br>
+		viewer.addCurve({points: [{x:0.0,y:0.0,z:0.0}, {x:-2.0,y:2.0,z:2.0}, 
+		{x:-4.0,y:4.0,z:4.0}],<br>
+		radius:0.5, fromArrow:false, toArrow: true, color:'red' });<br>
+		viewer.addCurve({points: [{x:0,y:0,z:0}, {x:5,y:3,z:0}, {x:5,y:7,z:0}, 
+		{x:0,y:10,z:0}],<br>
+		radius:0.2,<br>
+		smooth: 10,<br>
+		fromArrow:false,<br>
+		toArrow: true,<br>
+		color:'green',<br>
+		});<br>
+		viewer.render();<br>
+		<br>
+		viewer.addLine({ start: {x:4.0, y:0.0, z: 0.0}, end: {x:-4.0, y:0.0, z: 
+		0.0}, color: 'red', dashed: true });<br>
+		viewer.addLine({ start: {x:0.0, y:4.0, z: 0.0}, end: {x:0.0, y:-4.0, z: 
+		0.0}, color: 'green', dashed: true });<br>
+		viewer.addLine({ start: {x:0.0, y:0.0, z: 4.0}, end: {x:0.0, y: 0.0, 
+		z:-4.0}, color: 'blue', dashed: true });<br>
+		<br>
+		viewer.render();<br>
+		<br>
+		viewer.addCurve({points: [{x:0,y:0,z:0}, {x:-2,y:3,z:0}, {x:0,y:6,z:0}],<br>
+		radius:0.2,<br>
+		smooth: 10,<br>
+		color:'red',<br>
+		});<br>
+		viewer.render();<br>
+		<br>
+		&lt;/script&gt;<br>
+		<br>
+		&lt;/body&gt;<br>
+		&lt;/html&gt;</td>
+		<td width="24">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="50">&nbsp;</td>
+		<td>&nbsp;</td>
+		<td width="24">&nbsp;</td>
+	</tr>
+</table>
+<p>
 <script>
 // two spheree
 let element = document.querySelector('#container-01');
@@ -49,6 +125,8 @@ viewer.render();
 
 
 </script>
+
+</p>
 
 </body>
 </html>

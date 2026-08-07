@@ -5,7 +5,8 @@
 <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
 </head>
 <body>
-<div id="container-01" class="mol-container"></div> 
+<div id="container-01" class="mol-container">
+	<p></div> 
 <style> 
 .mol-container { 
                   width: 800px; 
@@ -20,6 +21,50 @@ viewer.addSphere({ center: {x:0.0, y: 1.0, z:0.0}, radius: 0.3, color: '0x7ecef4
 viewer.addSphere({ center: {x:0.0, y:-1.0, z:0.0}, radius: 0.3, color: '0x7ecef4' });
 viewer.render();
 </script>
+
+<table border="1" width="44%">
+	<tr>
+		<td width="65"> </td>
+		<td>Two balls -- Html code:</td>
+		<td width="28"> </td>
+	</tr>
+	<tr>
+		<td width="65"></td>
+		<td>&lt;html&gt;<br>
+		&lt;head&gt;<br>
+		&lt;meta charset=&quot;utf-8&quot;&gt;<br>
+		&lt;title&gt;My Homepage&lt;/title&gt;<br>
+		&lt;script src=&quot;https://3Dmol.org/build/3Dmol-min.js&quot;&gt;&lt;/script&gt;<br>
+		&lt;/head&gt;<br>
+		&lt;body&gt;<br>
+		&lt;div id=&quot;container-01&quot; class=&quot;mol-container&quot;&gt;&lt;/div&gt; <br>
+		&lt;style&gt; <br>
+		.mol-container { <br>
+		width: 800px; <br>
+		height: 800px; <br>
+		position: relative; }<br>
+		&lt;/style&gt;<br>
+		&lt;script&gt;<br>
+		let element = document.querySelector('#container-01');<br>
+		let config = { backgroundColor: '0xeeffee' };<br>
+		let viewer = $3Dmol.createViewer( element, config );<br>
+		viewer.addSphere({ center: {x:0.0, y: 1.0, z:0.0}, radius: 0.3, color: 
+		'0x7ecef4' });<br>
+		viewer.addSphere({ center: {x:0.0, y:-1.0, z:0.0}, radius: 0.3, color: 
+		'0x7ecef4' });<br>
+		viewer.render();<br>
+		&lt;/script&gt;<br>
+		<br>
+		&lt;/body&gt;<br>
+		&lt;/html&gt;</td>
+		<td width="28"></td>
+	</tr>
+	<tr>
+		<td width="65"></td>
+		<td> </td>
+		<td width="28"></td>
+	</tr>
+</table>
 
 </body>
 </html>

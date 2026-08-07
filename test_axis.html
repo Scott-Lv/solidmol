@@ -12,6 +12,84 @@
                   height: 800px; 
                   position: relative;  }
  </style>
+<table border="1" width="45%">
+	<tr>
+		<td width="28">&nbsp;</td>
+		<td width="651">ball, stick, axis, box </td>
+		<td width="40">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="28">&nbsp;</td>
+		<td width="651">&lt;html&gt;<br>
+		&lt;head&gt;<br>
+		&lt;meta charset=&quot;utf-8&quot;&gt;<br>
+		&lt;title&gt;My Homepage&lt;/title&gt;<br>
+		&lt;script src=&quot;https://3Dmol.org/build/3Dmol-min.js&quot;&gt;&lt;/script&gt;<br>
+		&lt;/head&gt;<br>
+		&lt;body&gt;<br>
+		&lt;div id=&quot;container-01&quot; class=&quot;mol-container&quot;&gt;&lt;/div&gt; <br>
+		&lt;style&gt; <br>
+		.mol-container { <br>
+		width: 800px; <br>
+		height: 800px; <br>
+		position: relative; }<br>
+		&lt;/style&gt;<br>
+		&lt;script&gt;<br>
+		// two spheree<br>
+		let element = document.querySelector('#container-01');<br>
+		let config = { backgroundColor: '0xeeffee' };<br>
+		let viewer = $3Dmol.createViewer( element, config );<br>
+		viewer.addSphere({ center: {x:0.0, y: 1.0, z:0.0}, radius: 0.3, color: 
+		'0x7ecef4' });<br>
+		viewer.addSphere({ center: {x:0.0, y:-1.0, z:0.0}, radius: 0.3, color: 
+		'0x7ecef4' });<br>
+		viewer.render();<br>
+		<br>
+		//bond<br>
+		viewer.addCylinder({start:{x:0.0, y: 1.0, z:0.0},<br>
+		end: {x:0.0, y:-1.0, z:0.0},<br>
+		radius:0.1, color:'lightgray', fromCap:false, toCap:false});<br>
+		viewer.render();<br>
+		<br>
+		//dot line<br>
+		viewer.addLine({<br>
+		start: {x:0.0, y:0.0, z: 4.0},<br>
+		end: {x:0.0, y:0.0, z:-4.0},<br>
+		color: 'red', dashed: true<br>
+		});<br>
+		viewer.render();<br>
+		<br>
+		//box<br>  		viewer.addBox({<br>
+		center:{x:0.0,y:0.0,z:0.0},<br>
+		dimensions: {w:4.0,h:4.0,d:4.0},<br>
+		opacity: 0.4,<br>
+		color:'gray'<br>
+		});<br>
+		viewer.render();<br>		<br>
+		//axis<br>
+		viewer.addArrow({ start: {x: -5.0, y: 0.0, z: 0.0}, end: {x: 5.0, y: 
+		0.0, z: 0.0},<br>
+		color: 'red', radius: 0.05 });<br>
+		viewer.addArrow({ start: {x: 0.0, y: 5.0, z: 0.0}, end: {x: 0.0, y:-5.0, 
+		z: 0.0},<br>
+		color: 'green', radius: 0.05 });<br>
+		viewer.addArrow({ start: {x: 0.0, y: 0.0, z: 5.0}, end: {x: 0.0, y: 0.0, 
+		z:-5.0},<br>
+		color: 'blue', radius: 0.05 });<br>
+		viewer.render();<br>
+		&lt;/script&gt;<br>
+		<br>
+		&lt;/body&gt;<br>
+		&lt;/html&gt;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="28">&nbsp;</td>
+		<td width="651">&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<p>
 <script>
 // two spheree
 let element = document.querySelector('#container-01');
@@ -36,11 +114,14 @@ viewer.addLine({
 viewer.render();
 
 //box
-//viewer.addBox({
-//center:{x:0.0,y:0.0,z:0.0},
-//dimensions: {w:4.0,h:4.0,d:4.0},opacity: 0.4,
-//color:'gray' });
-//viewer.render();
+viewer.addBox({
+center:{x:0.0,y:0.0,z:0.0},
+dimensions: {w:4.0,h:4.0,d:4.0},
+opacity: 0.4,
+color:'gray'
+});
+viewer.render();
+
 
 //axis
 viewer.addArrow({  start: {x: -5.0, y: 0.0, z: 0.0},   end: {x: 5.0, y: 0.0, z: 0.0},
@@ -50,10 +131,9 @@ viewer.addArrow({  start: {x: 0.0, y: 5.0, z: 0.0},   end: {x: 0.0, y:-5.0, z: 0
 viewer.addArrow({  start: {x: 0.0, y: 0.0, z: 5.0},   end: {x: 0.0, y: 0.0, z:-5.0},
    color: 'blue',  radius: 0.05 });
 viewer.render();
-
-
-
 </script>
+
+</p>
 
 </body>
 </html>
