@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Homepage</title>
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+</head>
+<body>
+<div id="container-01" class="mol-container"></div> 
+<style> 
+.mol-container { 
+                  width: 800px; 
+                  height: 800px; 
+                  position: relative;  }
+ </style>
+<script>
+// two spheree
+let element = document.querySelector('#container-01');
+let config = { backgroundColor: '0xeeffee' };
+let viewer = $3Dmol.createViewer( element, config );
+viewer.addSphere({ center: {x:0.0, y: 1.0, z:0.0}, radius: 0.3, color: '0x7ecef4' });
+viewer.addSphere({ center: {x:0.0, y:-1.0, z:0.0}, radius: 0.3, color: '0x7ecef4' });
+viewer.render();
+
+//bond
+viewer.addCylinder({start:{x:0.0, y: 1.0, z:0.0},
+                 end: {x:0.0, y:-1.0, z:0.0},
+                 radius:0.1, color:'lightgray', fromCap:false, toCap:false});
+viewer.render();
+
+//dot line
+viewer.addLine({
+  start: {x:0.0, y:0.0, z: 4.0},
+  end:  {x:0.0, y:0.0, z:-4.0},
+  color: 'red', dashed: true
+});
+viewer.render();
+
+//box
+//viewer.addBox({
+//center:{x:0.0,y:0.0,z:0.0},
+//dimensions: {w:4.0,h:4.0,d:4.0},opacity: 0.4,
+//color:'gray' });
+//viewer.render();
+
+//axis
+viewer.addArrow({  start: {x: -5.0, y: 0.0, z: 0.0},   end: {x: 5.0, y: 0.0, z: 0.0},
+   color: 'red',  radius: 0.05 });
+viewer.addArrow({  start: {x: 0.0, y: 5.0, z: 0.0},   end: {x: 0.0, y:-5.0, z: 0.0},
+   color: 'green',  radius: 0.05 });
+viewer.addArrow({  start: {x: 0.0, y: 0.0, z: 5.0},   end: {x: 0.0, y: 0.0, z:-5.0},
+   color: 'blue',  radius: 0.05 });
+viewer.render();
+
+
+
+</script>
+
+</body>
+</html>
